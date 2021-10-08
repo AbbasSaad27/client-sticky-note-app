@@ -156,4 +156,8 @@ body {
   .container {
     justify-content: center;
   }
+  .box,
+  .note-form {
+    margin-left: 0;
+  }
 }
