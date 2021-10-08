@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Sticky Notes</title>
+  </head>
+  <body>
+    <main class="container">
+      <!-- form to add note-content -->
+      <form action="#" class="note-form">
+        <input
+          type="text"
+          name="title"
+          id="title"
+          placeholder="Title"
+          required
+        />
+        <textarea
+          name="note-text"
+          id="note-text"
+          cols="30"
+          rows="10"
+          placeholder="content"
+          required
+        ></textarea>
+        <button type="submit" class="btn btn-submit">Add Note</button>
+      </form>
+    </main>
+    <div class="overlay">
+      <div class="popup">
+        <p class="warning">
+          Are you sure you want to permanently remove this item?
+        </p>
+        <button type="button" class="btn btn-cancel">Cancel</button>
+        <button type="button" class="btn btn-confirm">Yes</button>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
